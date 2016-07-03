@@ -252,75 +252,84 @@ English: @TeleSeedCH
 Persian: @IranSeed
 ]],
     help_text_realm = [[
-Realm Commands:
+Dangers گروه بات اسپیران :
+ 🔑🔑🔑🔑🔑🔑🔑🔑🔑🔑🔑
+!creategroup [ نام ] 
+ایجاد یک گروه 
+ 
+!createrealm [ نام ] 
+ایجاد یک قلمرو 
+ 
+! setname [ نام ] 
+تنظیم نام قلمرو 
+ 
+!setabout [group|sgroup] [GroupID] [text] 
+تنظیم یک گروه در مورد توضيحات
+ 
+! setrules [ GroupID ] [ متن ] 
+تنظیم قوانین یک گروه 
+ 
+!lock [GroupID] [settings]
+قفل کردن تنظيمات یک گروه است 
+ 
+!unlock [GroupID] [settings]
+بازكردن قفل تنظيمات یک گروه است
 
-!creategroup [name]
-Create a group
-
-!createrealm [name]
-Create a realm
-
-!setname [name]
-Set realm name
-
-!setabout [group_id] [text]
-Set a group's about text
-
-!setrules [grupo_id] [text]
-Set a group's rules
-
-!lock [grupo_id] [setting]
-Lock a group's setting
-
-!unlock [grupo_id] [setting]
-Unock a group's setting
+!settings [group|sgroup] [GroupID]
+تنظيم كردن تنظيمات براي گروه
 
 !wholist
-Get a list of members in group/realm
-
+دريافت ليست افراد در گروه يا ريلم 
+ 
 !who
-Get a file of members in group/realm
+دريافت فايل از افراد در گروه يا ريلم
 
 !type
-Get group type
+دريافت نوع گروه
+ 
+!kill chat [GroupID]
+نابودي همه ي افراد و پاك كردن گروه
 
-!kill chat [grupo_id]
-Kick all memebers and delete group
-
-!kill realm [realm_id]
-Kick all members and delete realm
-
-!addadmin [id|username]
-Promote an admin by id OR username *Sudo only
-
-!removeadmin [id|username]
-Demote an admin by id OR username *Sudo only
+!kill realm [RealmID]
+حذف و اخراج همه ي اعضاي ريلم و پاك كرن ريلم 
+ 
+!addadmin [ id | نام کاربری ] 
+ارتقای یک مدیر با id یا نام کاربری * توسط سودو يا ادمين(صاحب)
+ 
+!removeadmin [ id | نام کاربری ] 
+تنزل كردن يك مدير توسط id و نام كاربري * توسط سودو يا ادمين(صاحب)
 
 !list groups
-Get a list of all groups
-
+دريافت يك ليست از همه ي گروه ها
+ 
 !list realms
-Get a list of all realms
+ دريافت يك ليست از همه ي قلمرو ها
+
+!support
+ارتقاي يك كاربر به ساپورت
+
+!-support
+تنزل يك كاربر از ساپورت
 
 !log
-Get a logfile of current group or realm
-
+دريافت لوگ يا پرونده ي فعلي گروه يا ريلم 
+ 
 !broadcast [text]
 !broadcast Hello !
-Send text to all groups
-» Only sudo users can run this command
+ارسال متن به همه گروه‌ها 
+فقط sudo ها می‌توانند از این فرمان استفاده كنند. 
 
 !bc [group_id] [text]
 !bc 123456789 Hello !
-This command will send text to [group_id]
-
-» U can use both "/" and "!" 
-
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
+اين دستور ارسال خواهد شد به [ايدي گروه مورد نظر]
+ 🔑🔑🔑🔑🔑🔑🔑🔑🔑🔑🔑
+* * شما می‌توانید از "#" , "!" , "/"  و یا " / " برای همه فرمان‌ها استفاده كنيد.
+ 
+* فقط admins و sudo می‌توانند كه ربات هايي را در گروه ادد كنند.
+ 
+* فقط admins و sudo می‌تواند از ممنوعیت ، unban ، newlink ، setphoto ، setname ، قفل كردن و بازكردن ، تنظيم قوانین و تنظيم توضيحات و درباره و تظيمات دستور ها استفاده كنند.
+ 
+* فقط admins و sudo می‌توانند از  فرمان‌های setowner ، و اطلاعات يوزر موردنظر و دستورات خاص استفاده كنند.
 
 ]],
     help_text = [[
